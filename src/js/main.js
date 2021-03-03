@@ -20,19 +20,19 @@ var onEachFeature = function(feature, layer) {
   layer.bindPopup(ich.popup(feature.properties))
 };
 
-var data = require("./dog-parks.geo.json");
+var data = require("./AcyclicaMap.geo.json");
 
 function geojsonMarkerOptions(feature) {
   console.log(feature.properties)
 
   return {
-    radius: 7,
+    radius: 5,
     // fillColor: getColor(feature.properties.type),
     fillColor: "#22a85e",
     color: "#000000",
     weight: 1,
-    opacity: 1,
-    fillOpacity: 0.6
+    opacity: 0.3,
+    fillOpacity: 0.5,
   }
 };
 
@@ -51,4 +51,4 @@ var onEachFeature = function(feature, layer) {
 
  map.scrollWheelZoom.disable();
 
- map.fitBounds(geojson.getBounds());
+//  map.fitBounds(geojson.getBounds());
