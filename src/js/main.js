@@ -28,7 +28,7 @@ function geojsonMarkerOptions(feature) {
   return {
     radius: 5,
     // fillColor: getColor(feature.properties.type),
-    fillColor: "#22a85e",
+    fillColor: "#00A4E2",
     color: "#000000",
     weight: 1,
     opacity: 0.3,
