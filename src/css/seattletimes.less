@@ -21,6 +21,10 @@ body {
   line-height: @df-line-base;
   padding: 0;
   margin: 0;
+
+  @media @darkMode {
+    color: white;
+  }
 }
 
 a {
@@ -42,6 +46,10 @@ img, video, embed, object, iframe {
 h1, h2, h3, h4, h5, h6 {
   color: @df-off-black;
   margin: @df-line-base 0 (@df-line-base/2) 0;
+
+  @media @darkMode {
+    color: white;
+  }
 }
 
 h1 {
